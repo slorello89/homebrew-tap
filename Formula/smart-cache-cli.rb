@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.8.0-SNAPSHOT at 2023-07-24T16:46:32.145511429Z
+# Generated with JReleaser 1.8.0-SNAPSHOT at 2023-07-25T15:16:26.629720613Z
 class SmartCacheCli < Formula
   desc "The CLI tool for managing Redis Smart Cache"
   homepage "https://github.com/slorello89/redis-smart-cache-cli"
-  url "https://github.com/slorello89/redis-smart-cache-cli/releases/download/v0.0.10/smart-cache-cli-0.0.10.zip"
-  version "0.0.10"
-  sha256 "352496ca098ea2091db7655f4c782c9da7871e016890c2758b6ef85088287dd0"
+  url "https://github.com/slorello89/redis-smart-cache-cli/releases/download/v0.0.11/smart-cache-cli-0.0.11.zip"
+  version "0.0.11"
+  sha256 "835977619cd547f4fc66c8cf052572df3eb97a8b1f67d6b79723768faa802958"
   license "MIT"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class SmartCacheCli < Formula
 
   test do
     output = shell_output("#{bin}/smart-cache-cli --version")
-    assert_match "0.0.10", output
+    assert_match "0.0.11", output
   end
 end
